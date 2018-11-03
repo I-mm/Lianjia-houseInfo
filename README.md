@@ -1,9 +1,16 @@
+![alt text](https://github.com/I-mm/Lianjia-houseInfo/blob/master/pictures/lianjia.png)
+
+
 # Lianjia houseInfo collector
-+ 该项目提供一个链家网全国房源爬虫工具，数据存储目前支持Mysql,Sqlite和Postgres。非常方便转化成csv等格式文件。
-+ 利用Python Pandas ([source code](https://github.com/XuefengHuang/lianjia-scrawler/blob/master/data/lianjia.ipynb))分析链家在线房源数据，本项目提供了一个例子可以参考。
+
+
+
++ 项目概述：该项目提供一个链家网全国房源爬虫工具，数据使用Sqlite进行存储。
++ 数据获取：在项目给出的demo中，我们选择获取北京市城内六区（西城、东城、海淀、朝阳、丰台、石景山）的二手房出售及租赁数据，在后面对此进行分析和可视化操作。
++ 数据分析与可视化：利用Python Pandas ([source code](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data/lianjia.ipynb))分析链家在线房源数据，本项目提供了一个例子可以参考。
 + 由于链家的反爬虫机制，所以该项目限制了爬虫速度。如果被封，可以修改header的cookie信息。
 + 此网站(www.ershoufangdata.com) 利用该项目爬虫数据提供房价的可视化分析，帮助用户更好的评估房产和预测未来的价格，欢迎使用！
-+ **如果觉得好，请给项目点颗星来支持吧～～** 
+
 
 ![alt text](https://github.com/XuefengHuang/lianjia-scrawler/blob/master/screenshots/homepage.png)
 
