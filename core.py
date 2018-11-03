@@ -246,7 +246,7 @@ def get_sell_percommunity(communityname):
         time.sleep(1)
 
 
-def get_community_perregion(regionname=u'xicheng'):
+def get_community_perregion(regionname):
     url = BASE_URL + u"xiaoqu/" + regionname + "/"
     source_code = misc.get_source_code(url)
     soup = BeautifulSoup(source_code, 'lxml')
