@@ -1,6 +1,3 @@
-![alt text](https://github.com/I-mm/Lianjia-houseInfo/blob/master/pictures/lianjia.png)
-
-
 # Lianjia houseInfo collector
 
 
