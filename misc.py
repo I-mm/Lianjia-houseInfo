@@ -55,7 +55,7 @@ def get_total_pages(url):
 
     if page_info == None:
         return None
-    page_info_str = page_info.get('page-data').split(',')[0]  #'{"totalPage":5,"curPage":1}'
+    page_info_str = page_info.get('page-data_analysis').split(',')[0]  #'{"totalPage":5,"curPage":1}'
     total_pages = int(page_info_str.split(':')[1])
     return total_pages
 

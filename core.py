@@ -154,8 +154,8 @@ def get_house_percommunity(communityname):
                 info_dict.update({u'totalPrice': totalPrice.span.get_text()})
 
                 unitPrice = name.find("div", {"class": "unitPrice"})
-                info_dict.update({u'unitPrice': unitPrice.get('data-price')})
-                info_dict.update({u'houseID': unitPrice.get('data-hid')})
+                info_dict.update({u'unitPrice': unitPrice.get('data_analysis-price')})
+                info_dict.update({u'houseID': unitPrice.get('data_analysis-hid')})
             except:
                 continue
             # houseinfo insert into mysql
@@ -294,7 +294,7 @@ def get_community_perregion(regionname):
                 onrent = name.find("a", {"title": title + u"租房"})
                 info_dict.update({u'onrent': onrent.get_text().strip('\n').split(u'套')[0]})
 
-                info_dict.update({u'id': name.get('data-housecode')})
+                info_dict.update({u'id': name.get('data_analysis-housecode')})
 
                 price = name.find("div", {"class": "totalPrice"})
                 info_dict.update({u'price': price.span.get_text().strip('\n')})
@@ -418,7 +418,7 @@ def get_house_perregion(district):
                     housetitle = name.find("div", {"class": "title"})
                     info_dict.update({u'title': housetitle.a.get_text().strip()})
                     info_dict.update({u'link': housetitle.a.get('href')})
-                    houseID = housetitle.a.get('data-housecode')
+                    houseID = housetitle.a.get('data_analysis-housecode')
                     info_dict.update({u'houseID': houseID})
 
                     houseinfo = name.find("div", {"class": "houseInfo"})
@@ -449,7 +449,7 @@ def get_house_perregion(district):
                     info_dict.update({u'totalPrice': totalPrice.span.get_text()})
 
                     unitPrice = name.find("div", {"class": "unitPrice"})
-                    info_dict.update({u'unitPrice': unitPrice.get("data-price")})
+                    info_dict.update({u'unitPrice': unitPrice.get("data_analysis-price")})
                 except:
                     continue
 
@@ -492,7 +492,7 @@ def get_rent_perregion(district):
                     housetitle = name.find("div", {"class": "info-panel"})
                     info_dict.update({u'title': housetitle.h2.a.get_text().strip()})
                     info_dict.update({u'link': housetitle.a.get("href")})
-                    houseID = name.get("data-housecode")
+                    houseID = name.get("data_analysis-housecode")
                     info_dict.update({u'houseID': houseID})
 
                     region = name.find("span", {"class": "region"})
