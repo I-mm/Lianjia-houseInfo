@@ -1,5 +1,5 @@
 # coding=utf-8
-__author__ = 'yiming'
+__author__ = 'Yiming'
 
 import urllib.request
 import urllib.parse
@@ -16,9 +16,8 @@ def url_open(url):
 
 
 def get_addrCoor(addr):
-    key = "fa1cd1b8018b0834eaccb7628cb9fec4"
-    shengyangskey = "e9f18b9ebdcb8663c7e5b3d7a9b59de8"
-    url = "http://restapi.amap.com/v3/geocode/geo?key=" + shengyangskey + "&address=" + urllib.parse.quote(
+    key = "xxxxxxxxxxxxxxxxxxxxxxxxxx" # 出于隐私原因，这里隐去了我的api key
+    url = "http://restapi.amap.com/v3/geocode/geo?key=" + key + "&address=" + urllib.parse.quote(
         addr) + "&city=" + urllib.parse.quote("北京")
     # print(url)
     html = url_open(url)
