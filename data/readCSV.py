@@ -13,16 +13,15 @@ with open(DBcsvName + '_readable.csv', 'a', encoding='UTF-8') as fw:
     fw.write('\n')
     i = 1
     for line in lines:
-        if i > 9300:
-            line = line.strip('\n').split("|")  # 将单个数据分隔开存好
-            addr = line[3]
-            coor = getCoordinate.get_addrCoor(addr)
-            line.append('\"' + coor + '\"')
-            for e in line:
-                if e == line[0]:
-                    fw.write(e)
-                else:
-                    fw.write(',' + e)
-            fw.write('\n')
+        line = line.strip('\n').split("|")  # 将单个数据分隔开存好
+        addr = line[3]
+        coor = getCoordinate.get_addrCoor(addr)
+        line.append('\"' + coor + '\"')
+        for e in line:
+            if e == line[0]:
+                fw.write(e)
+            else:
+                fw.write(',' + e)
+        fw.write('\n')
         print("count: " + str(i))
         i = i + 1
