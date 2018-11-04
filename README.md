@@ -2,39 +2,39 @@
 
 
 
-+ 项目概述：该项目提供一个链家网全国房源爬虫工具，数据使用Sqlite进行存储。
-+ 数据获取：在项目给出的demo中，我们选择获取北京市城内六区（西城、东城、海淀、朝阳、丰台、石景山）的二手房出售及租赁数据，在后面对此进行分析和可视化操作。
-+ 数据分析与可视化：利用Python Pandas ([source code](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data/lianjia.ipynb))分析链家在线房源数据，本项目提供了一个例子可以参考。
++ 项目概述：该项目提供一个[链家网](https://bj.lianjia.com/)房源爬虫工具，数据使用[Sqlite３](https://www.sqlite.org/index.html)进行存储。
++ 数据获取：在项目给出的demo中，我们选择获取北京市城内六区（西城、东城、海淀、朝阳、丰台、石景山）的二手房出售及租赁信息，在后面对此进行分析和可视化操作。
++ 数据分析与可视化：利用Pandas和Ｍatplotlib ([lianjia_data_analysis.ipynb](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/lianjia_data_analysis.ipynb)）分析和可视化链家在线房源数据。
 
 ## 使用说明
-+ 下载源码并安装依赖包
++ 下载源码并安装依赖
 ```
-1. git clone https://github.com/XuefengHuang/lianjia-scrawler.git
-2. cd lianjia-scrawler
-# If you'd like not to use [virtualenv](https://virtualenv.pypa.io/en/stable/), please skip step 3 and 4.
-3. virtualenv lianjia
-4. source lianjia/bin/activate
-5. pip install -r requirements.txt
-6. python scrawl.py
+1. git clone https://github.com/I-mm/Lianjia-houseInfo
+2. cd Lianjia-houseInfo
+3. pip install -r requirements.txt
 ```
 
-+ 设置数据库信息以及爬取城市行政区信息（支持三种数据库格式）
++ 设置数据库信息以及爬取城市行政区信息（settings.py）
 ```
-DBENGINE = 'mysql' #ENGINE OPTIONS: mysql, sqlite3, postgresql
-DBNAME = 'test'
-DBUSER = 'root'
-DBPASSWORD = ''
-DBHOST = '127.0.0.1'
-DBPORT = 3306
-CITY = 'bj' # only one, shanghai=sh shenzhen=sh......
-REGIONLIST = [u'chaoyang', u'xicheng'] # 只支持拼音
+vi settings.py
+DBENGINE = 'sqlite3'
+DBNAME = 'beijing_chengliuqu.db' # 导出数据库命名
+CITY = 'bj'  # 爬取的城市分站, beijing=bj, shanghai=sh......
+REGIONLIST = [u'dongcheng', u'xicheng', u'chaoyang', u'fengtai', u'shijingshan', u'haidian'] # 爬取的城市内行政区，这里我们爬取北京城六区的二手房信息
 ```
 
-+ 运行 `python scrawl.py`! (请注释16行如果已爬取完所想要的小区信息)
++ 运行 `python scrawl.py`
 
-+ 可以修改`scrawl.py`来只爬取在售房源信息或者成交房源信息或者租售房源信息
+**Notes:** 
 
-+ 该程序提供两种方式爬取房源信息，一个是根据行政区，另一个是根据小区名。 但是根据行政区的只显示前100页的数据，对于像北京朝阳这种房源比较多的区，最好通过小区名才能爬全。具体内容请看下一部分。
++ 该项目提供两种方式爬取房源信息，一个是根据行政区，另一个是根据小区名。 但是根据行政区的只显示前100页的数据，所以对于像北京市朝阳区这种房源比较多的行政区，最好通过小区名才能爬全。
+
+
+
+##　部分文件说明
++ [beijing_chengliuqu.db](https://github.com/I-mm/Lianjia-houseInfo/blob/master/beijing_chengliuqu.db)：存储获得的北京城六区的二手房源信息
++ [data](https://github.com/I-mm/Lianjia-houseInfo/tree/master/data)：存储了由ｄｂ文件导出得到的ｃｓｖ格式的数据
++ [data_analysis](https://github.com/I-mm/Lianjia-houseInfo/tree/master/data_analysis)：数据分析相关代码和ｏｕｔｐｕｔ
 
 
 
@@ -43,6 +43,8 @@ REGIONLIST = [u'chaoyang', u'xicheng'] # 只支持拼音
 
 
 # 对链家网北京城六区二手房源数据的分析
+
+由[lianjia_data_analysis.ipynb](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/lianjia_data_analysis.ipynb)导出。
 
 ## 导入链家网二手房在售房源数据（数据更新时间2018-11-3）
 
