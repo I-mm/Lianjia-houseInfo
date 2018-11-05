@@ -103,3 +103,7 @@ REGIONLIST = [u'dongcheng', u'xicheng', u'chaoyang', u'fengtai', u'shijingshan',
 
 
 
+## Contributor
+
+[@赵屹铭](https://github.com/I-mm)，[@井长源](https://github.com/jcy2016)，[@夏昕](https://github.com/AliceXia98)，[@张丙驰](https://github.com/chriszbc)
+
