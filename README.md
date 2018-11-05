@@ -30,7 +30,7 @@ REGIONLIST = [u'dongcheng', u'xicheng', u'chaoyang', u'fengtai', u'shijingshan',
 
 **Notes:** 
 
-+ 该项目提供两种方式爬取房源信息，一个是根据行政区，另一个是根据小区名。 但是根据行政区的只显示前100页的数据，所以对于像北京市朝阳区这种房源比较多的行政区，最好通过小区名才能爬全。
++ 该项目提供两种方式爬取房源信息，一个是根据行政区，另一个是根据小区名。 但是根据行政区的只显示前100页的数据，所以对于房源较多的行政区，数据需要通过小区名才能爬全。
 
 <br />
 
@@ -79,12 +79,23 @@ REGIONLIST = [u'dongcheng', u'xicheng', u'chaoyang', u'fengtai', u'shijingshan',
 
 - [总价最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/TotalpriceHighst10.png)
 
-![总价最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/pictures/)
+![总价最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/pictures/TotalpriceHighst10.png)
 
 - [单价最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/UnitpriceHighest10.png)
+
+![单价最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/pictures/UnitpriceHighest10.png)
+
 - [面积最大的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/AreaLargest10.png)
+
+![面积最大的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/pictures/AreaLargest10.png)
+
 - [面积最小的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/AreaSmallest10.png)
+
+![面积最小的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/pictures/AreaSmallest10.png)
+
 - [关注度最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/GuanzhuHighest10.png)
+
+![关注度最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/pictures/GuanzhuHighest10.png)
 
 
 
