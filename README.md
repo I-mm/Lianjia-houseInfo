@@ -60,7 +60,7 @@ REGIONLIST = [u'dongcheng', u'xicheng', u'chaoyang', u'fengtai', u'shijingshan',
 这里使用高德开放平台的[位置数据可视化](https://lbs.amap.com/getting-started/visual/)功能。根据要求，我们先需要根据房源语义上的地理位置信息，使用[web地理编码api](https://lbs.amap.com/api/webservice/guide/api/georegeo)将其转换为坐标信息并插入表尾一栏。在获得坐标数据之后，再使用该功能进行位置信息的可视化。
 
 - [getCoordinate.py](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data/getCoordinate.py): 发起请求接收位置数据，被[readCSV.py](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data/readCSV.py)调用
-    
+  
     说明：出于隐私原因，此开源版本隐去了笔者的api key
     ```python
     def get_addrCoor(addr):
@@ -71,11 +71,11 @@ REGIONLIST = [u'dongcheng', u'xicheng', u'chaoyang', u'fengtai', u'shijingshan',
       target = json.loads(html)
     ```
 
-部分可视化效果展示：（具体参见[output](https://github.com/I-mm/Lianjia-houseInfo/tree/master/data_analysis/output)）
+部分地理位置可视化效果展示：（具体参见[location_visualization](https://github.com/I-mm/Lianjia-houseInfo/tree/master/data_analysis/output/location_visualization)）
 
 
 
-**！！！！！！！这里放那一堆图！！！！！！！**
+![北京城六区所有二手房源地理分布-圆圈大小代表单价](data_analysis\output\location_visualization\北京城六区所有二手房源地理分布-圆圈大小代表单价.png)
 
 <br />
 
