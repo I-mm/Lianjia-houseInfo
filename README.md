@@ -73,9 +73,20 @@ REGIONLIST = [u'dongcheng', u'xicheng', u'chaoyang', u'fengtai', u'shijingshan',
 
 部分地理位置可视化效果展示：（具体参见[location_visualization](https://github.com/I-mm/Lianjia-houseInfo/tree/master/data_analysis/output/location_visualization)）
 
+- [北京城六区所有二手房源地理分布-圆圈大小代表单价](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/%E5%8C%97%E4%BA%AC%E5%9F%8E%E5%85%AD%E5%8C%BA%E6%89%80%E6%9C%89%E4%BA%8C%E6%89%8B%E6%88%BF%E6%BA%90%E5%9C%B0%E7%90%86%E5%88%86%E5%B8%83-%E5%9C%86%E5%9C%88%E5%A4%A7%E5%B0%8F%E4%BB%A3%E8%A1%A8%E5%8D%95%E4%BB%B7.png)
+
+![北京城六区所有二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/pictures/%E5%8C%97%E4%BA%AC%E5%9F%8E%E5%85%AD%E5%8C%BA%E6%89%80%E6%9C%89%E4%BA%8C%E6%89%8B%E6%88%BF%E6%BA%90%E5%9C%B0%E7%90%86%E5%88%86%E5%B8%83-%E5%9C%86%E5%9C%88%E5%A4%A7%E5%B0%8F%E4%BB%A3%E8%A1%A8%E5%8D%95%E4%BB%B7.png)
+
+- [总价最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/TotalpriceHighst10.png)
+
+![总价最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/pictures/)
+
+- [单价最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/UnitpriceHighest10.png)
+- [面积最大的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/AreaLargest10.png)
+- [面积最小的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/AreaSmallest10.png)
+- [关注度最高的十套二手房源地理分布](https://github.com/I-mm/Lianjia-houseInfo/blob/master/data_analysis/output/location_visualization/GuanzhuHighest10.png)
 
 
-![北京城六区所有二手房源地理分布-圆圈大小代表单价](data_analysis\output\location_visualization\北京城六区所有二手房源地理分布-圆圈大小代表单价.png)
 
 <br />
 
